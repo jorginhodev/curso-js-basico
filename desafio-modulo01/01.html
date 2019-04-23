@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafio - Exercício 01</title>
+</head>
+<body>
+  
+  <script>
+    var endereco = {
+      rua: 'Rua dos Pinheiros',
+      numero: 1293,
+      bairro: 'Centro',
+      cidade: 'São Paulo',
+      uf: 'SP'
+    };
+
+    function retornaEndereco(endereco) {
+      return 'O usuário mora em ' + endereco.cidade + ' / ' + endereco.uf + ', no bairro ' + endereco.bairro + 
+      ', na rua "' + endereco.rua + '" com nº ' + endereco.numero + '.';
+    }
+
+    console.log(retornaEndereco(endereco));
+  </script>
+</body>
+</html>
