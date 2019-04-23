@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aula 07 - Operadores Lógicos</title>
+</head>
+<body>
+  
+  <script>
+    // AND -> &&
+    // OR -> ||
+    // NOT -> !
+
+    var sexo = 'M';
+    var idade = 15;
+
+    if (sexo === 'M' && idade >= 18) {
+      console.log('Entrou no if');
+    } else if (sexo === 'M' || idade >= 18) {
+      console.log('Entrou no else if');
+    } else {
+      console.log('Entrou no else');
+    }
+
+    if (sexo !== 'F') {
+      console.log('Feminino');
+    }
+  </script>
+</body>
+</html>
