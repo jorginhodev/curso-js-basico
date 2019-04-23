@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aula 10 - Intervalo e timeout</title>
+</head>
+<body>
+  
+  <script>
+    function exibeAlgo() {
+      console.log('Exibindo contínuamente a cada 1 segundo');
+    }
+
+    function exibeAlgoComDelay() {
+      console.log('Exibindo depois de 3 segundos');
+    }
+
+    setInterval(exibeAlgo, 1000);
+
+    setTimeout(exibeAlgoComDelay, 3000);
+  </script>
+</body>
+</html>
