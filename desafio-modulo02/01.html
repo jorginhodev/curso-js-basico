@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafio Módulo 02 - Exercício 01</title>
+  <style>
+    #botao {
+      text-transform: uppercase;
+      font-size: 1.1em;
+      font-weight: bold;
+      background-color: white;
+      border: 2px solid #1e90ff;
+      color: #1e90ff;
+      padding: 15px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #botao:hover {
+      border-color: #00376c;
+      background-color: #00376c;
+      color: white;
+      transition: .5s;
+    }
+    #app {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="botao">Criar quadrado</button>
+  <div id="app">
+  </div>
+  
+  <script>
+    var containerElement = document.querySelector('#app');
+    var btnElement = document.querySelector('#botao');
+    btnElement.onclick = function () {
+      var boxElement = document.createElement('div');
+      boxElement.setAttribute('class', 'box');
+      
+      containerElement.appendChild(boxElement);
+    };
+  </script>
+</body>
+</html>
